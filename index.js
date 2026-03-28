@@ -7,7 +7,8 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.DirectMessages,
     GatewayIntentBits.MessageContent
-  ]
+  ],
+  partials: ["CHANNEL"]
 });
 
 client.once("ready", () => {
